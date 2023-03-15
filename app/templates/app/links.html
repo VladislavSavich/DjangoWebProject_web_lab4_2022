@@ -1,0 +1,23 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+{% load static %}
+
+
+<ul>
+    <li><a href="https://www.rusnano.com/zakupki/" target="_blank">
+    <img src="{% static 'app/content/ROS.jpg' %}" alt="" /> Закупочная деятельность.</a>
+    </li>
+    <li><a href="https://www.rusnano.com/raskrytie-informatsii/tsennye-bumagi/akcii/" target="_blank">
+    <img src="{% static 'app/content/ROS.jpg' %}" alt=""  /> Ценные бумаги.</a>
+    </li>
+    <li><a href="https://www.rusnano.com/raskrytie-informatsii/kopii-dokumentov/" target="_blank">
+    <img src="{% static 'app/content/ROS.jpg' %}" alt=""  /> Предоставление копий документов.</a>
+    </li>
+</ul>
+
+{% endblock %}
